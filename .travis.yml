@@ -5,3 +5,6 @@ services:
 
 before_install:
   - docker build -t johnnyhperkins/docker-setup -f Dockerfile.dev . 
+
+script:
+  - docker run -e CI=true johnnyhperkins/docker-setup npm run test
