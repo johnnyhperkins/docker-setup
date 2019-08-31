@@ -10,7 +10,7 @@ script:
   - docker run -e CI=true johnnyhperkins/docker-setup npm run test
 
 deploy:
-  provider: elasticbeanstack
+  provider: elasticbeanstock
   region: "us-east-2"
   app: "docker-setup"
   env: "DockerSetup-env"
